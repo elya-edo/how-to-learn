@@ -1,13 +1,260 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Научиться учиться</title>
-</head>
-<body>
-  <div class="page">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Научиться учиться</title>
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/style.css">
+  </head>
+  <body class="page">
+    <header class="header">
+      <div class="logo logo_place_header"></div>
+      <h1 class="header__title text">Научиться учиться</h1>
 
-  </div>
-</body>
+      <h2 class="header__subtitle text">
+        Какие современные и эффективные подходы к обучению вы можете
+        использовать в своей жизни?
+        <a class="header__link" href="#" target="_blank">Узнать &rarr;</a>
+      </h2>
+
+      <img
+        class="header__main-illustration"
+        src="./images/header-image.png"
+        alt="картинка не загрузилась">
+
+      <div class="header__square-pic"></div>
+    </header>
+
+    <main>
+      <section class="description">
+        <div class="two-columns">
+          <h2 class="two-columns__brief text">Главные проблемы в обучении</h2>
+
+          <div class="two-columns__main-text">
+            <p class="two-columns__paragraph text">
+              Ни в школе, ни в институте нас не учат тому, как правильно изучать
+              материал. Мы готовимся к экзаменам и учим билеты. Мы тренируемся
+              решать однообразные задачи, чтобы лучше сдать тест, но часто в
+              итоге это не дает нам реального знания. Зубрежка быстро
+              выветривается и не приносит пользы.
+            </p>
+
+            <p class="two-columns__paragraph paragraph-margin text">
+              <span class="two-columns__paragraph span-accent">Вывод: </span
+              >учиться тоже нужно уметь, но почему-то этому мало где учат. Что с
+              этим делать?
+            </p>
+
+            <p class="two-columns__paragraph text">
+              Конкретные техники и упражнения помогают изменить подход к
+              обучению, сделать его эффективным и захватывающим. Эти же техники
+              применяются на примере обучения в Практикуме.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="digits">
+        <h2 class="section-title text">Цифры и факты</h2>
+        <h3 class="section-subtitle text">Про учёбу и мозг</h3>
+
+        <div class="table">
+          <div class="table__cell">
+            <h4 class="table__heading text">86 миллиардов</h4>
+            <p class="table__text text">Число нейронов в мозге человека</p>
+          </div>
+          <div class="table__cell">
+            <h4 class="table__heading text">2.1 миллиарда</h4>
+            <p class="table__text text">
+              Число нуждающихся в повышении квалификации
+            </p>
+            <p class="table__text text">Всемирный Банк, 2017</p>
+          </div>
+          <div class="table__cell">
+            <h4 class="table__heading text">1000 терабайт</h4>
+            <p class="table__text text">Объём памяти человека</p>
+          </div>
+          <div class="table__cell">
+            <h4 class="table__heading text">500 триллионов</h4>
+            <p class="table__text text">
+              Число ответственных за обучение нервных синапсов у взрослого
+              человека
+            </p>
+          </div>
+
+          <div class="table__cell">
+            <h4 class="table__heading text">420 миллионов</h4>
+            <p class="table__text text">
+              Число взрослых людей моложе 25 лет, не имеющих образования для
+              трудоустройства
+            </p>
+            <p class="table__text">Всемирный Банк, 2017</p>
+          </div>
+          <div class="table__cell">
+            <h4 class="table__heading text">17–20 лет</h4>
+            <p class="table__text text">Пик обучаемости</p>
+          </div>
+          <div class="table__cell">
+            <h4 class="table__heading text">1885 год</h4>
+            <p class="table__text text">Открытие кривой забывания</p>
+          </div>
+          <div class="table__cell">
+            <h4 class="table__heading text">1889 год</h4>
+            <p class="table__text text">Открытие условного рефлекса</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="feynman">
+        <h2 class="feynman__title text">Метод Фейнмана</h2>
+        <h3 class="feynman__subtitle text">Выучить и не забыть.</h3>
+        <a class="feynman__link" href="#" target="_blank">Подробнее &rarr;</a>
+        <img
+          class="feynman__image"
+          src="./images/feynman.png"
+          alt="картинка не загрузилась">
+      </section>
+
+      <section class="kaufman">
+        <h2 class="section-title section-title_theme_dark text">
+          Принципы обучения
+        </h2>
+        <h3 class="section-subtitle section-subtitle_theme_dark text">
+          от Джоша Кауфмана
+        </h3>
+        <div class="table table_theme_dark">
+          <!-- table_theme_dark не используется -->
+          <div class="table__cell_theme_dark">
+            <h4 class="table__heading_theme_dark text">1</h4>
+            <p class="table__text_theme_dark text">
+              Выберите привлекательный проект.
+            </p>
+          </div>
+          <div class="table__cell_theme_dark">
+            <h4 class="table__heading_theme_dark text">2</h4>
+            <p class="table__text_theme_dark text">
+              Сосредоточьтесь на каком-то одном навыке.
+            </p>
+          </div>
+          <div class="table__cell_theme_dark">
+            <h4 class="table__heading_theme_dark text">3</h4>
+            <p class="table__text_theme_dark text">
+              Определите целевой уровень мастерства.
+            </p>
+          </div>
+          <div class="table__cell_theme_dark">
+            <h4 class="table__heading_theme_dark text">4</h4>
+            <p class="table__text_theme_dark text">
+              Разбейте навык на элементы.
+            </p>
+          </div>
+          <div class="table__cell_theme_dark">
+            <h4 class="table__heading_theme_dark text">5</h4>
+            <p class="table__text_theme_dark text">
+              Приготовьте всё необходимое для занятий.
+            </p>
+          </div>
+          <div class="table__cell_theme_dark">
+            <h4 class="table__heading_theme_dark text">6</h4>
+            <p class="table__text_theme_dark text">
+              Устраните препятствия для занятий.
+            </p>
+          </div>
+          <div class="table__cell_theme_dark">
+            <h4 class="table__heading_theme_dark text">7</h4>
+            <p class="table__text_theme_dark text">
+              Выделите специальное время для занятий.
+            </p>
+          </div>
+          <div class="table__cell_theme_dark">
+            <h4 class="table__heading_theme_dark text">8</h4>
+            <p class="table__text_theme_dark text">
+              Создайте быстрые петли обратной связи.
+            </p>
+          </div>
+          <div class="table__cell_theme_dark">
+            <h4 class="table__heading_theme_dark text">9</h4>
+            <p class="table__text_theme_dark text">
+              Занимайтесь по расписанию, короткими интенсивными интервалами.
+            </p>
+          </div>
+          <div class="table__cell_theme_dark">
+            <h4 class="table__heading_theme_dark text">10</h4>
+            <p class="table__text_theme_dark text">
+              Уделяйте внимание количеству и скорости.
+            </p>
+          </div>
+        </div>
+        <div class="kaufman__triangle"></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__columns">
+        <div class="footer__column_content_copyright">
+          <div class="logo logo_place_footer"></div>
+          <p class="footer__author text">&copy; Элеонора Рахманова</p>
+        </div>
+        <div class="footer__column_content_info">
+          <h4 class="footer__column-heading text">О практикуме</h4>
+          <nav class="footer__column-links">
+            <ul class="list">
+              <!--добавила класс чтобы сбросить отступ об браузера -->
+              <li>
+                <a class="footer__column-link" href="#" target="_blank"
+                  >Главная</a
+                >
+              </li>
+              <li>
+                <a class="footer__column-link" href="#" target="_blank"
+                  >Концепция</a
+                >
+              </li>
+              <li>
+                <a class="footer__column-link" href="#" target="_blank"
+                  >Наставники</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer__column_content_social">
+          <h4 class="footer__column-heading text">Соцсети</h4>
+          <nav class="footer__column-links">
+            <ul class="list">
+              <!--добавила класс чтобы сбросить отступ об браузера -->
+              <li>
+                <a class="footer__column-link" href="#" target="_blank">
+                  <img
+                    class="footer__social-icon"
+                    src="./images/youtube-icon.svg"
+                    alt="иконка YouTube">
+                  YouTube</a
+                >
+              </li>
+              <li>
+                <a class="footer__column-link" href="#" target="_blank">
+                  <img
+                    class="footer__social-icon"
+                    src="./images/vk_color_white.svg"
+                    alt="иконка ВКонтакте">
+                  ВКонтакте</a
+                >
+              </li>
+              <li>
+                <a class="footer__column-link" href="#" target="_blank">
+                  <img
+                    class="footer__social-icon"
+                    src="./images/tiktok-icon.svg"
+                    alt="иконка TikTok">
+                  TikTok</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
