@@ -6,7 +6,7 @@
   /* выше установили ограничение по максимальной ширине */
   margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
-  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
 .text {
@@ -38,7 +38,7 @@
   top: 30px;
   left: 64px;
   z-index: 2;
-  background-image: url("../images/logo_place_header.svg");
+  background-image: url('../images/logo_place_header.svg');
 }
 
 .header__title {
@@ -267,7 +267,7 @@
   position: absolute;
   right: -210px;
   top: 0;
-  background-image: url("../images/kaufman-triangle.svg");
+  background-image: url('../images/kaufman-triangle.svg');
   background-size: cover;
 }
 
@@ -293,7 +293,7 @@
 }
 
 .logo_place_footer {
-  background-image: url("../images/logo_place_footer.svg");
+  background-image: url('../images/logo_place_footer.svg');
 }
 
 .footer__author {
