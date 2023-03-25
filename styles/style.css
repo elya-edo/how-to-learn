@@ -42,7 +42,10 @@
 }
 
 .header__title {
-  width: 730px;
+  margin-block-start: 0; /*убираю стили браузера у h и p*/
+  margin-block-end: 0;   /*убираю стили браузера у h и p*/
+  z-index: 2; /*чтобы при малых разрешениях текст был поверх другого контента*/
+  max-width: 730px;
   margin-left: 64px;
   line-height: 96px;
   font-size: 102px;
@@ -50,7 +53,10 @@
 }
 
 .header__subtitle {
-  width: 388px;
+  margin-block-start: 0; /*убираю стили браузера у h и p*/
+  margin-block-end: 0;   /*убираю стили браузера у h и p*/
+  z-index: 2; /*чтобы при малых разрешениях текст был поверх другого контента*/
+  max-width: 388px;
   position: absolute;
   bottom: 30px;
   left: 64px;
@@ -96,7 +102,9 @@
 }
 
 .two-columns__brief {
-  width: 175px;
+  margin-block-start: 0; /*убираю стили браузера у h и p*/
+  margin-block-end: 0;   /*убираю стили браузера у h и p*/
+  max-width: 175px;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
@@ -110,35 +118,45 @@
 }
 
 .two-columns__paragraph {
+  margin-block-start: 0; /*убираю стили браузера у h и p*/
+  margin-block-end: 0;   /*убираю стили браузера у h и p*/
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
+  margin-bottom: 30px;
 }
 
-.span-accent {
-  /* класс чтобы сделать слово в Вывод жирным (в секции description) */
+.two-columns__paragraph:last-child {
+  margin-bottom: 0;
+}
+
+
+.two-columns__span-accent {
+  /* класс для слова Вывод: (в секции description) */
   font-weight: 600;
+  line-height: 34px;
+  font-size: 24px;
 }
 
-.paragraph-margin {
-  /* класс чтобы задать отступы только у среднего параграфа (в секции description) */
-  margin: 30px 0;
-}
 
 .digits {
   padding: 100px 0;
 }
 
 .section-title {
+  margin-block-start: 0; /*убираю стили браузера у h и p*/
+  margin-block-end: 0;   /*убираю стили браузера у h и p*/
   width: 60%;
   text-align: center;
-  margin: 0 auto;
+  margin: 0 auto 20px;
   line-height: 1.15;
   font-size: 60px;
   font-weight: 600;
 }
 
 .section-subtitle {
+  margin-block-start: 0; /*убираю стили браузера у h и p*/
+  margin-block-end: 0;   /*убираю стили браузера у h и p*/
   width: 60%;
   text-align: center;
   margin: 0 auto;
@@ -161,12 +179,16 @@
 }
 
 .table__heading {
+  margin-block-start: 0; /*убираю стили браузера у h и p*/
+  margin-block-end: 0;   /*убираю стили браузера у h и p*/
   line-height: 1.15;
   font-size: 24px;
   font-weight: 600;
 }
 
 .table__text {
+  margin-block-start: 0; /*убираю стили браузера у h и p*/
+  margin-block-end: 0;   /*убираю стили браузера у h и p*/
   margin-top: 20px;
   line-height: 1.2;
   font-size: 18px;
@@ -174,7 +196,7 @@
 }
 
 .feynman {
-  height: 890px;
+  min-height: 890px;
   background-color: #f2f2f2;
   position: relative;
   display: flex;
@@ -185,8 +207,10 @@
 }
 
 .feynman__title {
-  width: 648px;
-  /* height: 200; /*эт че*/
+  margin-block-start: 0; /*убираю стили браузера у h и p*/
+  margin-block-end: 0;   /*убираю стили браузера у h и p*/
+  z-index: 2; /*чтобы при малых разрешениях текст был поверх другого контента*/
+  max-width: 648px;
   line-height: 1.15;
   font-size: 120px;
   font-weight: 600;
@@ -195,6 +219,9 @@
 }
 
 .feynman__subtitle {
+  margin-block-start: 0; /*убираю стили браузера у h и p*/
+  margin-block-end: 0;   /*убираю стили браузера у h и p*/
+  z-index: 2; /*чтобы при малых разрешениях текст был поверх другого контента*/
   margin-top: 70px;
   text-align: center;
   line-height: 51px;
@@ -232,12 +259,12 @@
 
 .section-title_theme_dark {
   color: #fff;
-  position: relative; /*доб потому что при position:static не действует z-index, который задан в классе text*/
+  z-index: 2; /*чтобы при малых разрешениях текст был поверх другого контента*/
+  position: relative; /*доб потому что при position:static не действует z-index*/
 }
 
 .section-subtitle_theme_dark {
   color: #fff;
-  position: relative; /*доб потому что при position:static не действует z-index, который задан в классе text*/
 }
 
 .table__cell_theme_dark {
@@ -248,17 +275,10 @@
 
 .table__heading_theme_dark {
   color: #fff;
-  line-height: 1.15;
-  font-size: 24px;
-  font-weight: 600;
 }
 
 .table__text_theme_dark {
   color: #fff;
-  margin-top: 20px;
-  line-height: 1.2;
-  font-size: 18px;
-  font-weight: normal;
 }
 
 .kaufman__triangle {
@@ -272,9 +292,10 @@
 }
 
 .footer {
-  padding: 60px 0 40px;
-  display: flex;
   min-height: 350px;
+  padding: 60px 0 40px;
+  box-sizing: border-box;
+  display: flex;
   background-color: #1f1f1f;
 }
 
@@ -297,6 +318,8 @@
 }
 
 .footer__author {
+  margin-block-start: 0; /*убираю стили браузера у h и p*/
+  margin-block-end: 0;   /*убираю стили браузера у h и p*/
   color: #fff;
   margin: 18px 0;
   line-height: 25px;
@@ -306,9 +329,14 @@
 
 .list {
   padding-inline-start: 0; /*убираю сдвиг в <ul> */
-  list-style: none; /*убираю маркер у списка <ul> */
+  list-style: none;        /*убираю маркер у списка <ul> */
+  margin-block-start: 0; /*убираю стили браузера*/
+  margin-block-end: 0;   /*убираю стили браузера*/
 }
+
 .footer__column-heading {
+  margin-block-start: 0; /*убираю стили браузера у h и p*/
+  margin-block-end: 0;   /*убираю стили браузера у h и p*/
   color: #fff;
   line-height: 30px;
   font-size: 18px;
