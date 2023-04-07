@@ -1,0 +1,9 @@
+.feynman__subtitle {
+  margin: 0; /*убираю стили браузера у h и p*/
+  z-index: 2; /*чтобы при малых разрешениях текст был поверх другого контента*/
+  margin-top: 70px;
+  text-align: center;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+}

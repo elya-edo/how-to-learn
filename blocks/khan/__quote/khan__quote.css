@@ -1,0 +1,7 @@
+.khan__quote {
+  margin: 0; /*убираю стили браузера у h и p*/
+  width: 790px;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}

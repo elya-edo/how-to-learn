@@ -1,0 +1,7 @@
+.footer__column-heading {
+  margin: 0; /*убираю стили браузера у h и p*/
+  color: #fff;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: 600;
+}

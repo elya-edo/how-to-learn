@@ -1,0 +1,6 @@
+.two-columns__span-accent {
+  /* класс для слова Вывод: (в секции description) */
+  font-weight: 600;
+  line-height: 34px;
+  font-size: 24px;
+}

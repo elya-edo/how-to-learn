@@ -1,0 +1,7 @@
+.cards__description {
+  margin: 0; /*убираю стили браузера у h и p*/
+  text-align: center;
+  line-height: 23px;
+  font-size: 18px;
+  font-weight: normal;
+}

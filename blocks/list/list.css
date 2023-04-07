@@ -1,0 +1,5 @@
+.list {
+  padding-inline-start: 0; /*убираю сдвиг в <ul> */
+  list-style: none;        /*убираю маркер у списка <ul> */
+  margin: 0;               /*убираю стили браузера*/
+}

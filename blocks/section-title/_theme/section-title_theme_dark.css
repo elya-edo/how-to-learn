@@ -1,0 +1,5 @@
+.section-title_theme_dark {
+  color: #fff;
+  z-index: 2; /*чтобы при малых разрешениях текст был поверх другого контента*/
+  position: relative; /*доб потому что при position:static не действует z-index*/
+}
