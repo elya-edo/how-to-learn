@@ -3,4 +3,6 @@
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
+  padding-inline-start: 0; /*убираю сдвиг в <ul> */
+  list-style: none;        /*убираю маркер у списка <ul> */
 }

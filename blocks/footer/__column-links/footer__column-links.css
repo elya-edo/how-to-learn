@@ -3,4 +3,6 @@
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
+  padding-inline-start: 0; /*убираю сдвиг в <ul> */
+  list-style: none;        /*убираю маркер у списка <ul> */
 }

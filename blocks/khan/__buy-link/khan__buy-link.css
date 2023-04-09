@@ -5,7 +5,7 @@
   line-height: 42px;
   font-size: 30px;
   font-weight: normal;
-  height: 50px; /*чтобы они не растягивалась на всю высоту блока*/
+  align-self: self-start;
 }
 
 .khan__buy-link:hover {
